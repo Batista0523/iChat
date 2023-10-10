@@ -39,7 +39,21 @@ const ChatFeed = (props) => {
     });
   };
 
-  return <div>ChatFeed</div>;
+  return (
+    <div className="chat-feed">
+      <div className="chat-title-container">
+        <div className="chat-title">{chat?.title}</div>
+        <div className="chat-subtitle"></div>
+        {renderMessages()}
+
+        <div style={{ height: "100px" }} />
+
+        <div className="message-form-container">
+          <MessageForm {...props} chatId={activeChat} />
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default ChatFeed;
