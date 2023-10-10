@@ -18,19 +18,20 @@ const LoginForm = () => {
     };
 
     try {
-      await axios.get("https://api.chatengine.io/chats", {
-        headers: authObject,
-      });
-
-      localStorage.setItem("username", username);
-      localStorage.setItem("password", password);
-
-      window.location.reload();
-      setError("");
-    } catch (err) {
-      setError("Oops, incorrect credentials.");
-    }
-  };
+        const axios = (await import("axios")).default;  
+        const response = await axios.get("https://api.chatengine.io/chats", {
+          headers: authObject,
+        });
+    
+        localStorage.setItem("username", username);
+        localStorage.setItem("password", password);
+    
+        window.location.reload();
+        setError("");
+      } catch (err) {
+        setError("Oops, incorrect credentials.");
+      }
+    };
 
   return (
     <div className="wrapper">
