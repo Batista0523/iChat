@@ -23,6 +23,22 @@
   .ce-chat-subtitle-text {
     color: #595959 !important;
   }
+  .logout-button {
+    padding: 10px 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .logout-button:hover {
+    background-color: #d32f2f;
+  }
+  
+  .logout-button:active {
+    background-color: #b71c1c;
+  }
   
   .ce-chat-form-container {
     padding-bottom: 20px !important;

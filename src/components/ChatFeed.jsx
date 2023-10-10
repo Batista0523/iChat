@@ -57,6 +57,7 @@ const ChatFeed = (props) => {
     });
   };
 
+
   if (!chat) return <div />;
 
   return (
@@ -72,6 +73,7 @@ const ChatFeed = (props) => {
       <div className="message-form-container">
         <MessageForm {...props} chatId={activeChat} />
       </div>
+     
     </div>
   );
 };

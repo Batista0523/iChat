@@ -1,8 +1,17 @@
-# React + Vite
+# Chat Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple chat application built using React and ChatEngine.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To use this application, you'll need to create a username and password on [ChatEngine](https://chatengine.io). Follow the steps below:
+
+1. **Create an Account:**
+   Visit [ChatEngine Sign Up](https://chatengine.io/signup) and create a new account.
+
+2. **Create a Project:**
+   After signing in, create a new project by clicking on "Create Project". You'll get a Project ID which will be used in the application.
+
+3. **Create a User:**
+   In your project, navigate to the "Users" section and create a new user. Note down the username and password.
+

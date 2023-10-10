@@ -27,6 +27,7 @@ const MessageForm = (props) => {
   const handleUpload = (event) => {
     sendMessage(creds, chatId, { files: event.target.files, text: "" });
   };
+ 
 
   return (
     <form className="message-form" onSubmit={handleSubmit}>
@@ -53,6 +54,7 @@ const MessageForm = (props) => {
         <SendOutlined className="send-icon" />
       </button>
     </form>
+    
   );
 };
 
